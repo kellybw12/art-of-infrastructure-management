@@ -1,5 +1,5 @@
 # The Art of Infrastructure Management with Kubernetes API Machinery
-![Screen Shot 2023-09-19 at 10 54 34 AM](https://media.github.rbx.com/user/1575/files/bc44d2e4-cb0d-4325-91fa-3f780e28b5bb)
+![Screen Shot 2023-09-19 at 10 54 34 AM (1)](https://github.com/kellybw12/art-of-infrastructure-management/assets/72891670/d91b2e16-02f5-4bd5-b353-508943723c64)
 
 
 The goal of this Level Up Lab demo is to illustrate how Kubernetes can be leveraged in real-world situations.
