@@ -1,0 +1,14 @@
+apiVersion: bucketgroup.my.domain/v1
+kind: S3BucketGroup
+metadata:
+  labels:
+    app.kubernetes.io/name: s3bucketgroup
+    app.kubernetes.io/instance: s3bucketgroup-sample
+    app.kubernetes.io/part-of: art-of-infrastructure-management
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: art-of-infrastructure-management
+  name: s3bucketgroup-sample
+spec:
+  desiredBucketCount: 3
+status:
+  bucketCount: 0
