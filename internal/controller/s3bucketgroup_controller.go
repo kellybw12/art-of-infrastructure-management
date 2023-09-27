@@ -71,16 +71,16 @@ func (r *S3BucketGroupReconciler) Reconcile(ctx context.Context, req ctrl.Reques
 	_ = log.FromContext(ctx)
 
 	// Uncomment to run part 2
-	// result, err := DoPart2(r, ctx, req)
-	// if err != nil {
-	// 	log.Log.Error(err, colorCodeMessage("error occurred when running part 2"))
-	// }
+	result, err := DoPart2(r, ctx, req)
+	if err != nil {
+		log.Log.Error(err, colorCodeMessage("error occurred when running part 2"))
+	}
 
 	// Uncomment to run part 3
-	result, err := DoPart3(r, ctx, req)
-	if err != nil {
-		log.Log.Error(err, colorCodeMessage("error occurred when running part 3"))
-	}
+	// result, err := DoPart3(r, ctx, req)
+	// if err != nil {
+	// 	log.Log.Error(err, colorCodeMessage("error occurred when running part 3"))
+	// }
 
 	return result, nil
 }
