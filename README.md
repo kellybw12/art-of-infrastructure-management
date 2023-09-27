@@ -81,19 +81,19 @@ aws s3 rb s3://my-s3-bucket-2 --endpoint=http://localhost:4566
 
 ## Demo Part 3: Complex Example
 
-1. **Comment** lines 68-71 and **uncomment** lines 74-77 in /internal/controllers/s3bucketgroup_controller.go
+1. **Comment** lines 74-77 and **uncomment** lines 80-83 in /internal/controllers/s3bucketgroup_controller.go
 
 ```sh
-    68 // result, err := DoPart2(r, ctx, req)
-    69 // if err != nil {
-    70 // 	log.Log.Error(err, "error occurred when running part 2")
-    71 // }
-    72
-    73
-    74 result, err := DoPart3(r, ctx, req)
-    75 if err != nil {
-    76	log.Log.Error(err, "error occurred when running part 3")
-    77 }
+    74 // result, err := DoPart2(r, ctx, req)
+    75 // if err != nil {
+    76 // 	log.Log.Error(err, "error occurred when running part 2")
+    77 // }
+    78
+    79
+    80 result, err := DoPart3(r, ctx, req)
+    81 if err != nil {
+    82	log.Log.Error(err, "error occurred when running part 3")
+    83 }
 ```
 
 2. Run the controllers
