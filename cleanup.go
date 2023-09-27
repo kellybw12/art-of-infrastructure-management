@@ -6,7 +6,18 @@ import (
 	"strings"
 )
 
-// Script to clear all of the exiting s3 buckets
+// Script to clear all of the existing s3 buckets from aws
+
+func deleteAllBucketResources() error {
+	command := exec.Command("kubectl", "delete", "--all", "s3bucket.bucket.my.domain")
+	_, err := command.Output()
+	if err != nil {
+		fmt.Println("error listing s3 buckets: ", err)
+		return err
+	}
+	fmt.Println("All S3 bucket resources deleted")
+	return nil
+}
 
 func cleanup() error {
 	listBucketsCommand := exec.Command("aws", "s3", "ls", "--endpoint=http://localhost:4566")
@@ -33,6 +44,11 @@ func cleanup() error {
 		}
 	}
 	fmt.Println("All S3 buckets deleted")
+
+	err = deleteAllBucketResources()
+	if err != nil {
+		fmt.Println("failed to delete s3 bucket resources")
+	}
 	return nil
 }
 
