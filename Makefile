@@ -176,3 +176,5 @@ setup:
 
 	@echo -e "$(PURPLE)Running make install to install the CRDs into the K8s cluster...$(RESET)"
 	make install
+
+	kubectl apply -f config/samples/bucketgroup_v1_s3bucketgroup.yaml
