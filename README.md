@@ -23,10 +23,10 @@ There's setup scripts available for ubuntu and macos. Windows user please setup 
 bash scripts/macos/setup_docker.sh 
 
 # Please run below command to setup kind cluster and kubebuilder
-bash scripts/macos/setup_docker.sh 
+bash scripts/macos/setup_kind_env.sh
 
 # Please run below command to setup localstack and awscli
-bash scripts/macos/setup_docker.sh 
+bash scripts/macos/setup_localstack.sh
 ```
 
 #### Ubuntu
@@ -36,10 +36,10 @@ bash scripts/macos/setup_docker.sh
 bash scripts/ubuntu/setup_docker.sh 
 
 # Please run below command to setup kind cluster and kubebuilder
-bash scripts/ubuntu/setup_docker.sh 
+bash scripts/ubuntu/setup_kind_env.sh
 
 # Please run below command to setup localstack and awscli
-bash scripts/ubuntu/setup_docker.sh 
+bash scripts/ubuntu/setup_localstack.sh 
 ```
 
 **Note:** Your controller will automatically use the current context in your kubeconfig file (i.e. whatever cluster `kubectl cluster-info` shows).
