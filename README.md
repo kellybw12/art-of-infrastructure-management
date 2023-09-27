@@ -63,6 +63,7 @@ kubectl get s3buckets.bucket.my.domain
 1. Run the controllers
 
 ```sh
+make setup
 make run
 ```
 
